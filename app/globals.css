@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('assets/fonts/AvenirNextCyr-Thin.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #080617;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: "Avenir Next";
+  color: var(--primary-color);
+}
+
+.container {
+  padding: 0px 16px;
+  width: 100%;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width:800px) {
+  .container {
+      margin: 0px auto ;
+      max-width: 1080px;
+      padding: 0px 0px;
+  }
+
+}
+@media screen and (max-width: 1220px)  and (min-width:800px) {
+  .container{
+    padding: 0px 10px;
+  }
+}
+
+.active{
+color: var(--primary-color) !important;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+  background-color: #141223;
+  padding: 0px 0 40px 0;
+
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer .displayNone {
+  display: none;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footerLogo img {
+  height: 70px;
+  width: 193.2px;
+  margin-bottom: 2rem;
+
+  /* added */
+  margin-bottom: 44px;
+}
+
+.footerLogo .logo-arrow {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+
+  /* added */
+  margin-top: 56px;
+  margin-bottom: 16px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.footerCol {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footerCol h4 {
+  font-size: 1.25rem;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.underline-gradient {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 15px;
+  /* width: 229px;
+  height: 1px;
+  margin-left: -4rem; */
+}
+
+.title {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+.title i {
+  display: none;
+  font-size: 1.2rem;
+ 
+
+}
+
+.footerCol img {
+  width: 100%;
+}
+
+.footerList {
+  margin-top: 0.8rem;
+  color: #a1a0a7;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease; /* Adjust this duration for a slower transition */
+  margin-bottom: 0.8rem;
+}
+.footerList li a {
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 16px;
+}
+.footerList.show {
+  max-height: 1000px; /* large enough to fit the content */
+}
+
+.footerCol ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footerCol ul li a {
+  color: #a1a0a7;
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footerCol ul li a:hover {
+  color: #fff;
+  padding-left: 7px;
+}
+
+.footerCol .social-links a {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 10px 10px 0;
+  line-height: 40px;
+  transition: all 0.5s ease;
+}
+
+.footerCol .social-links a:hover {
+  color: #151515;
+  background-color: #fff;
+}
+
+.footerNav {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  order: -1;
+}
+
+.socialMedia a {
+  text-decoration: none;
+}
+
+.socialMedia i {
+  color: #a5a5a5;
+  font-size: 1.5rem;
+}
+
+.miniNav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.miniNav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: .875rem;
+}
+
+.miniNav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.miniNav ul li i {
+  font-size: 0.8rem;
+}
+
+.miniNav ul li i {
+  font-size: 0.5rem;
+  margin-right: 15px;
+  font-size: 0.3rem;
+}
+
+.copyright {
+  color: #a5a5a5;
+  font-size: 1rem;
+}
+
+i.ri-circle-fill {
+  /* margin-right: 14px; */
+  /* Add space between bullet and text */
+}
+
+.miniNav {
+  margin: 30px 0px;
+}
+
+@media screen and (max-width: 1050px) {
+  .miniNav ul li {
+    font-size: .7rem;
+  }
+  .socialMedia i {
+    font-size: 1rem;
+  }
+  .copyright {
+    font-size: .7rem;
+  }
+
+  .footerCol img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .footerLogo img {
+    height: 50px;
+    width: 138px;
+  }
+
+  .footerLogo .logo-arrow {
+    height: 42px;
+    width: 42px;
+  }
+
+  .footerCol {
+    width: 100%;
+    padding: 0rem;
+    padding-right: 0.8rem;
+    margin-bottom: 0rem;
+    overflow: hidden;
+  }
+
+  .footer .title {
+    padding: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    user-select: none; /* Combined into one */
+    -webkit-tap-highlight-color: transparent; /* For mobile */
+    -webkit-touch-callout: none; /* Disable touch callout */
+    -moz-user-select: none; /* Disable selection for Firefox */
+    -ms-user-select: none; /* Disable selection for Internet Explorer/Edge */
+  }
+
+  .footer .title i {
+    display: block;
+  }
+
+  .footerList {
+    padding-left: 0rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+
+  .footerList.show {
+    max-height: 1000px;
+  }
+
+  .row .footerCol:last-child img {
+    display: none;
+  }
+
+  .footerNav {
+    flex-direction: column;
+  }
+
+  .footerCol h4 {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0.035rem;
+    text-align: left;
+  }
+
+  .title i {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footerCol ul li a {
+    font-size: .87rem;
+  }
+
+  .socialMedia i {
+    height: 24px;
+    width: 24px;
+  }
+
+  .miniNav ul li a {
+    font-size: .625rem;
+    font-weight: 400;
+    line-height: 13.66px;
+    text-align: left;
+  }
+
+  .miniNav ul {
+    gap: 5px;
+  }
+
+  .miniNav ul li i {
+    margin-right: 5px;
+    font-size: 0.3rem;
+  }
+
+  .footerNav {
+    margin-top: 1rem;
+  }
+
+  .socialMedia {
+    margin-bottom: 30px;
+    order: 0;
+  }
+
+  .footerCol img {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width:801px) {
+  .footerList {
+    max-height: 500px;
+  }
+}
